@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="PREFERENCIAS DE USUARIO">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alumno:">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/border_edit"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Nombre...."
+                android:id="@+id/txtnombre">
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar Nombre"
+                android:id="@+id/rb01">
+            </RadioButton>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verificar Nombre"
+                android:id="@+id/rb02">
+            </RadioButton>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliminar Nombre"
+                android:id="@+id/rb03">
+            </RadioButton>|
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnaceptar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="operar"
+                android:text="Aceptar"></Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nemsaje"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#EE0404"></TextView>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
